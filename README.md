@@ -1,4 +1,4 @@
-# news-posts-data-analysis
+# news-posts-views-analysis
 ## Making sense out of Random Social Media Posts' views data
 
 The goal is to understand and make sense out of the given data, in order to derive insights and this repository will take you through my steps, challenges and results in the process.
@@ -101,4 +101,9 @@ To conclude, I'd like to state the following understandings from the data proces
 3. Thus, after 10 Hours a post peaks its viewability. 
 
 >>What does the distribution of posts look like?
-1. Considering that the posts are put up on a platform having a mixture of ideal & non-ideal demographic of users, we can observe that 
+1. Considering that the posts are put up on a platform having a mixture of ideal & non-ideal demographic of users, we can observe that the views are linked to each other, meaning the distribution of post3 would be dependent on post2 and post1
+2. Let us verify with the density plot to understand the distribution of posts. Density plots are smoothened versions of histogram and generally depict distribution the best way. 
+
+![image](https://user-images.githubusercontent.com/69042198/126693212-1c8f911c-8d65-418d-8e2c-d55bd86a9db5.png)
+
+Thank you for reading through! 
