@@ -19,7 +19,7 @@ Well then, what is the big deal about this data?
 Overview of the process
 **Data Pre-processing —> Data Visualization &Analysis —> Deriving Insights & Conclusion.**
 
-## Step 1 - Data preprocessing
+## A - Data preprocessing
 
 First of all, we check what's wrong with the data, this is how it looks like.
 
@@ -90,3 +90,15 @@ plt.plot(data.cumsum())
 Now, in order to understand the most important aspect of this process "When does a post peak it's viewability" we need to take into account the fact that viewability peak for each post can be different, but a common local-peak can be generalized for all posts
 
 Thus, we can see that all posts peak their viewability, after 10 hours of being created/posted. Thus the time starting 10 hours to 15 hours is when most posts get a hike in their views.
+
+<h2>
+	INSIGHTS! </h2>
+	
+To conclude, I'd like to state the following understandings from the data process that we just went through:
+>>After how many hours of creation, does a post peak it viewability?
+1. The no. of users viewing the post generally decreases after about 3 hours, up until 6 hours of creation. After this, the views keep increasing and the peak in viewability is observed between 10-19 hours after creation. 
+2. This also explains the fact that users share posts with other users and recommend them to see/read the particular post which is why the cumulative effect is observed from 10 hours to 20 hours. And once the content of the post is consumed, the views don't increase substantially.
+3. Thus, after 10 Hours a post peaks its viewability. 
+
+>>What does the distribution of posts look like?
+1. Considering that the posts are put up on a platform having a mixture of ideal & non-ideal demographic of users, we can observe that 
