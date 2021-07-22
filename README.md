@@ -26,7 +26,6 @@ First of all, we check what's wrong with the data, this is how it looks like.
 ![image](https://user-images.githubusercontent.com/69042198/126679077-926895a4-e3ba-4fab-8210-14d92e4da601.png) ![image](https://user-images.githubusercontent.com/69042198/126681896-6e6a25ec-6cba-4539-ac1d-71a8b6a95ec2.png)
 
 
-
 >One can observe that there exists no data for hours>24 &hours<98, thus a big chunk of data is missing, for all post IDs.
 >One can also observe that P3 & P5 display views predominantly during the 99th & 100th hour.
 >The value '#users that view a particular post' is mutually exclusive for `ith` hour and `(i+1)th` hour, unlike what is specified in the description of data ('Total' # users viewed).
@@ -60,14 +59,16 @@ else:
 2. From (1) we can say that the value '#users that view `i+1`th post' is dependent on views of `ith` post. Thus, the hourly views of Post Ids P1, P2, P3, P4, P5, P6 are partially in sync.
 3. [Not really an assumption, a statement rather] Since the original data has only 48 entries for over 6 post IDs, and is faulty at places, any manipulation/change done to improve size & accessibility does not deter the quality of data, if anything it only enhances its quality.
 
-This is how data looks like now
+This is how the cleaned data looks like now  →    
 ![image](https://user-images.githubusercontent.com/69042198/126689468-14fc8170-3b6a-4313-a40d-8e43d167a3c5.png)
+
+## **Note** - You can find the cleaned version of the data, ready to use [here](https://github.com/mrunallll/news-posts-views-analysis/blob/main/final_clean.xlsx)
 
 ## B - Data Visualization & Insights
 
 Let us take a look at some of our graphs now and answer some questions. The first question that one might ask is this -
 
-Q-What does the distribution of the posts looks like?
+Q-What does the distribution of the posts actually look like?
 
 For Post 1, we can see that this is how the graph turns out, and there are highs and lows for batch of hours.
 
@@ -98,7 +99,7 @@ To conclude, I'd like to state the following understandings from the data proces
 >>After how many hours of creation, does a post peak it viewability?
 1. The no. of users viewing the post generally decreases after about 3 hours, up until 6 hours of creation. After this, the views keep increasing and the peak in viewability is observed between 10-19 hours after creation. 
 2. This also explains the fact that users share posts with other users and recommend them to see/read the particular post which is why the cumulative effect is observed from 10 hours to 20 hours. And once the content of the post is consumed, the views don't increase substantially.
-3. Thus, after 10 Hours a post peaks its viewability. 
+3. Thus, **PRECISELY, after 10 Hours of creation the post peaks its viewability.** 
 
 >>What does the distribution of posts look like?
 1. Considering that the posts are put up on a platform having a mixture of ideal & non-ideal demographic of users, we can observe that the views are linked to each other, meaning the distribution of post3 would be dependent on post2 and post1
