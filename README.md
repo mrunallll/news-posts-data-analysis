@@ -26,9 +26,9 @@ First of all, we check what's wrong with the data, this is how it looks like.
 ![image](https://user-images.githubusercontent.com/69042198/126679077-926895a4-e3ba-4fab-8210-14d92e4da601.png) ![image](https://user-images.githubusercontent.com/69042198/126681896-6e6a25ec-6cba-4539-ac1d-71a8b6a95ec2.png)
 
 
->One can observe that there exists no data for hours>24 &hours<98, thus a big chunk of data is missing, for all post IDs.
->One can also observe that P3 & P5 display views predominantly during the 99th & 100th hour.
->The value '#users that view a particular post' is mutually exclusive for `ith` hour and `(i+1)th` hour, unlike what is specified in the description of data ('Total' # users viewed).
+>One can observe that there exists no data for hours>24 &hours<98, thus a big chunk of data is missing, for all post IDs.  
+>One can also observe that P3 & P5 display views predominantly during the 99th & 100th hour.  
+>The value '#users that view a particular post' is mutually exclusive for `ith` hour and `(i+1)th` hour, unlike what is specified in the description of data ('Total' # users viewed).  
 
 ### Solution for this *bad data* is converting DataFrame to **`Pivot Table`**
 
