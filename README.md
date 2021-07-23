@@ -1,20 +1,20 @@
-# news-posts-views-analysis
+# News articles posts' views Analysis
 ## Making sense out of Random Social Media Posts' views data
 
 The goal is to understand and make sense out of the given data, in order to derive insights and this repository will take you through my steps, challenges and results in the process.
-
 The data is in the format as specified below:
 
 Postid | Hours since creation | Total users viewed this postid
-Postid 1 | 0 | 10
-Postid 1 | 2 | 12...
-Postid 2 | 0 | 9 and so on ***(except, not really)***
-Well then, what is the big deal about this data?
+Postid 1 | 0 | 10   
+Postid 1 | 2 | 12...   
+Postid 2 | 0 | 9 and so on ***(except, not really)***   
 
-1. It is highly inconsistent, with the time period varying for each Post ID
-2. There are duplicate entries for certain Post IDs (imposters, if you will)
+### Well then, what is the big deal about this data?
+
+1. It is highly inconsistent, with the time period varying for each Post ID.
+2. There are duplicate entries for certain Post IDs. (imposters, if you will)
 3. While some Post IDs have 20 records of views, some have just 3! (Irregularity)
-4. And, the data is invariably small (It has only 48 entries!)
+4. And, the data is invariably small. (It has only 48 entries!)
 
 Overview of the process
 **Data Pre-processing —> Data Visualization &Analysis —> Deriving Insights & Conclusion.**
@@ -53,11 +53,12 @@ if (previous posts' nth hour views ==0):
 else:
 	df[['p3']]=df[['p3']].fillna(np.mean((p2[n]th hour), (p1[n]th hour)..)
 ```
-### Step 4 - Making Assumptions
+### Step 4 - Assumptions
 
-1. All the posts are related to each other
-2. From (1) we can say that the value '#users that view `i+1`th post' is dependent on views of `ith` post. Thus, the hourly views of Post Ids P1, P2, P3, P4, P5, P6 are partially in sync.
-3. [Not really an assumption, a statement rather] Since the original data has only 48 entries for over 6 post IDs, and is faulty at places, any manipulation/change done to improve size & accessibility does not deter the quality of data, if anything it only enhances its quality.
+1. All the posts are related to each other.
+2. From (1) we can say that the value `#users that view` `i+1`th post' is dependent on views of `ith` post. Thus, the hourly views of Post Ids P1, P2, P3, P4, P5, P6 are partially in sync.
+3. Inconsistency, irregularity and duplicates that are observed in data, are all unintentional and sheer faults which need to be corrected.
+4. [Not really an assumption, a statement rather] Since the original data has only 48 entries for over 6 post IDs, and is faulty at places, any manipulation/change done to improve size & accessibility does not diminish the quality of data, if anything it only enhances its quality.
 
 This is how the cleaned data looks like now  →    
 ![image](https://user-images.githubusercontent.com/69042198/126689468-14fc8170-3b6a-4313-a40d-8e43d167a3c5.png)
